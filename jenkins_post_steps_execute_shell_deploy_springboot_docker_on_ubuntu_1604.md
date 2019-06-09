@@ -10,7 +10,7 @@ $ mv ~/.ssh/<PRIVATE_KEY_FILE> ~/jenkins/jenkins_home
 ```
 Jenkins home from [Install Docker Jenkins on Ubuntu 16.04](install_docker_jenkins_on_ubuntu_1604.md)
 
-# 3. Set Command
+# 3. Set Post Steps Command
 
 ### 3.1 Run SonarQube 
 ```
