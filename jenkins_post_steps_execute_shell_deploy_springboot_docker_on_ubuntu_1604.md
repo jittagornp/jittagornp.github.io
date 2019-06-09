@@ -40,3 +40,12 @@ scp -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 $JENKINS_HOME/workspace/<PROJECT_NAME>/Dockerfile \
 <REMOTE_USER>@<REMOTE_SERVER>:~/deploy/<PROJECT_NAME>
 ```
+
+### 3.4 Stop and Remove container
+
+```
+ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
+-o StrictHostKeyChecking=no \
+<REMOTE_USER>@<REMOTE_SERVER> \
+'docker rm $(docker stop $(docker ps -a -q --filter ancestor=<DOCKER_IMAGE_NAME> --format="{{.ID}}"))'
+```
