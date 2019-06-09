@@ -15,7 +15,7 @@ $ docker run --rm  \
 -e "KONG_PG_USER=<DATABASE_USERNAME>" \
 -e "KONG_PG_PASSWORD=<DATABASE_PASSWORD>" \
 -e "KONG_PG_PORT=<DATABASE_PORT>" \
--e "KONG_PG_SCHEMAR=<DATABASE_SCHEMA>" \
+-e "KONG_PG_SCHEMA=<DATABASE_SCHEMA>" \
 -e "KONG_PG_SSL=on" \
 kong:latest kong migrations bootstrap
 ```
@@ -28,7 +28,7 @@ $ docker run -d --name kong \
      -e "KONG_PG_USER=<DATABASE_USERNAME>" \
      -e "KONG_PG_PASSWORD=<DATABASE_PASSWORD>" \
      -e "KONG_PG_PORT=<DATABASE_PORT>" \
-     -e "KONG_PG_SCHEMAR=<DATABASE_SCHEMA>" \
+     -e "KONG_PG_SCHEMA=<DATABASE_SCHEMA>" \
      -e "KONG_PG_PORT=<DATABASE_PORT>" \
      -e "KONG_PG_SSL=on" \
      -e "KONG_PROXY_ACCESS_LOG=/dev/stdout" \
@@ -42,3 +42,8 @@ $ docker run -d --name kong \
      -p 39424:8444 \
      kong:latest
 ```
+
+# Reference
+
+- [https://hub.docker.com/_/kong](https://hub.docker.com/_/kong)
+- [https://docs.konghq.com/1.1.x/configuration/#postgres-settings](https://docs.konghq.com/1.1.x/configuration/#postgres-settings)
