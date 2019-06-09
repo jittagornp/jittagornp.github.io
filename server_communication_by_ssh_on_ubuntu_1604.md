@@ -12,7 +12,7 @@
 $ ssh-keygen -b 2048 -t rsa -f ~/.ssh/api-key
 ```
 
-thare are 2 files created in ~/.ssh
+thare are 2 files created in ~/.ssh which contains 
 - api-key
 - api-key.pub
 
@@ -29,9 +29,9 @@ $ chmod 644 ~/.ssh/api-key.pub
 ```
 $ scp ~/.ssh/api-key.pub myuser@192.168.1.2:
 ```
-enter myuser password 
+enter `myuser` password 
 
-- will copy public file to home directory of `myuser`  
+- it will copy public key file to home directory of `myuser`  
 
 # On Remote Server (Server 2)
 
@@ -47,7 +47,7 @@ $ chmod 644 ~/.ssh/authorized_keys
 
 # Back to Client (Server 1)
 
-Try connect to Server 2 
+Test connect to Server 2 
 
 ```
 $ ssh -i ~/.ssh/api-key myuser@192.168.1.2
