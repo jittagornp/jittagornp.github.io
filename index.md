@@ -17,3 +17,4 @@
 ### Install Other Software
 
 - [Install Java on Ubuntu 16.04](install_java_on_ubuntu_1604.md) 
+- [Install Maven on Ubuntu 16.04](install_maven_on_ubuntu_1604.md) 
