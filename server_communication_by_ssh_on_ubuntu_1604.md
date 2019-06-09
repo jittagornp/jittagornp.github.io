@@ -25,8 +25,9 @@ $ chmod 644 ~/.ssh/api-key.pub
 ```
 $ scp ~/.ssh/api-key.pub myuser@192.168.1.2:
 ```
+enter myuser password 
 
-will copy public file to home directory of `myuser`  
+- will copy public file to home directory of `myuser`  
 
 # On Remote Server (Server 2)
 
@@ -38,4 +39,12 @@ $ cat ~/api-key.pub >> ~/.ssh/authorized_keys
 
 ```
 $ chmod 644 ~/.ssh/authorized_keys
+```
+
+# Back to Client (Server 1)
+
+Try connect to Server 2 
+
+```
+$ ssh -i ~/.ssh/api-key myuser@192.168.1.2
 ```
