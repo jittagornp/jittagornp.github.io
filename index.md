@@ -1,4 +1,4 @@
-# Jittagornp GitHub Blog
+# GitHub Blog
 
 # Code
 
