@@ -25,3 +25,17 @@ $ chmod 644 ~/.ssh/api-key.pub
 ```
 $ scp ~/.ssh/api-key.pub myuser@192.168.1.2:
 ```
+
+will copy public file to home directory of `myuser`  
+
+# On Remote Server (Server 2)
+
+1. Append public file to `authorized_keys`
+```
+$ cat ~/api-key.pub >> ~/.ssh/authorized_keys
+```
+2. Change file permission
+
+```
+$ chmod 644 ~/.ssh/authorized_keys
+```
