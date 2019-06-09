@@ -12,7 +12,7 @@
 $ ssh-keygen -b 2048 -t rsa -f ~/.ssh/api-key
 ```
 
-thare are 2 files created in ~/.ssh which contains 
+there are 2 files created in ~/.ssh which contains 
 - api-key
 - api-key.pub
 
