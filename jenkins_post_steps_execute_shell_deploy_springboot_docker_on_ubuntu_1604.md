@@ -58,3 +58,12 @@ ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 <REMOTE_USER>@<REMOTE_SERVER> \
 'docker image rm <DOCKER_IMAGE_NAME>'
 ```
+
+### 3.6 Build new image from Dockerfile
+
+```
+ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
+-o StrictHostKeyChecking=no \
+<REMOTE_USER>@<REMOTE_SERVER> \
+'docker build -t <DOCKER_IMAGE_NAME> -f ~/deploy/<PROJECT_NAME>/Dockerfile ~/deploy/<PROJECT_NAME>'
+```
