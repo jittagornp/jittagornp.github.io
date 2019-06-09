@@ -12,6 +12,10 @@
 $ ssh-keygen -b 2048 -t rsa -f ~/.ssh/api-key
 ```
 
+thare are 2 files created in ~/.ssh
+- api-key
+- api-key.pub
+
 2. Change file permission 
 ```
 $ chmod 600 ~/.ssh/api-key
