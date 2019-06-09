@@ -1,4 +1,4 @@
-# Install Kong With External Postgresql on Ubuntu 16.04 
+# Install Docker Kong With External Postgresql on Ubuntu 16.04 
 
 # Create Network
 
