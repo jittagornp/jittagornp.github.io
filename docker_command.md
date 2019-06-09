@@ -1,6 +1,6 @@
 # Docker Command
 
-### Show all running containers
+### Show all containers
 
 ```
 $ docker ps -a
