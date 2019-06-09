@@ -1,3 +1,3 @@
 # Blog
 
-- [Install Docker on Ubuntu 16.04](install_docker_in_ubuntu_1604.md)
+- [Install Docker on Ubuntu 16.04](install_docker_on_ubuntu_1604.md)
