@@ -24,7 +24,7 @@ $ docker stop <CONTAINER_ID>
 $ docker rm <CONTAINER_ID>
 ```
 
-### Remove Image
+### Remove image
 
 ```
 $ docker image rm <IMAGE_NAME>
