@@ -6,7 +6,7 @@ See on [Server Communication by SSH on Ubuntu 16.04](server_communication_by_ssh
 
 # 2. MOVE SSH private key file to $JENKINS_HOME 
 ```
-$ mv ~/.ssh/ ~/jenkins/jenkins_home
+$ mv ~/.ssh/<PRIVATE_KEY_FILE> ~/jenkins/jenkins_home
 ```
 Jenkins home from [Install Docker Jenkins on Ubuntu 16.04](install_docker_jenkins_on_ubuntu_1604.md)
 
@@ -14,15 +14,20 @@ Jenkins home from [Install Docker Jenkins on Ubuntu 16.04](install_docker_jenkin
 
 ### 3.1 Run SonarQube 
 ```
-$ mvn sonar:sonar -Dsonar.host.url=http://<SONARQUBE_SERVER>:9000  -Dsonar.login=<SONARQUBE_USER_TOKEN>
+mvn sonar:sonar -Dsonar.host.url=http://<SONARQUBE_SERVER>:9000  -Dsonar.login=<SONARQUBE_USER_TOKEN>
 ```
-### 3.2 Create deploy folder
+### 3.2 Create deploy folder on remote server 
 ```
-$ ssh -i $JENKINS_HOME/api-key \
+ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 -o StrictHostKeyChecking=no <REMOTE_USER>@<REMOTE_SERVER> \
-'mkdir -p ~/deploy/project/target'
+'mkdir -p ~/deploy/<PROJECT_NAME>/target'
 ```
 
 ### 3.3 Copy .jar and Dockerfile to remote server 
 
-
+```
+scp -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
+-o StrictHostKeyChecking=no \
+$JENKINS_HOME/workspace/<PROJECT_NAME>/target/*.jar \
+<REMOTE_USER>@<REMOTE_SERVER>:~/deploy/<PROJECT_NAME>/target 
+```
