@@ -35,7 +35,7 @@ enter `myuser` password
 
 # On Remote Server (Server 2)
 
-### 1. Append public file to `authorized_keys`
+### 1. Append public key file to `authorized_keys`
 ```
 $ cat ~/api-key.pub >> ~/.ssh/authorized_keys
 ```
