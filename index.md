@@ -13,6 +13,7 @@
 - [Install Docker Mongodb on Ubuntu 16.04](install_docker_mongodb_on_ubuntu_1604.md) 
 - [Install Docker Jenkins on Ubuntu 16.04](install_docker_jenkins_on_ubuntu_1604.md) 
 - [Install Docker Sonarqube on Ubuntu 16.04](install_docker_sonarqube_on_ubuntu_1604.md) 
+- [Install Docker Zipkin on Ubuntu 16.04](install_docker_zipkin_on_ubuntu_1604.md) 
 
 ### Install Other Software
 
