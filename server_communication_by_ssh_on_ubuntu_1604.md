@@ -1,6 +1,6 @@
 # Server Communication by SSH on Ubuntu 16.04
 
-> Server1 <-> Server 2
+> `Server1` communicate with `Server 2`
 
 # On Client (Server 1) 
 
