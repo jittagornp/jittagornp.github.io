@@ -27,3 +27,7 @@
 ### Configuration
 
 - [Spring-boot Dockerfile](spring_boot_dockerfile.md) 
+
+### How to
+
+- [Generate SSH Key on Ubuntu 16.04](https://na5cent.blogspot.com/2013/11/ssh-keys-linux-ubuntu.html)
