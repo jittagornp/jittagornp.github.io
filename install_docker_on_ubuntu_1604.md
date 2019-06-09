@@ -50,13 +50,12 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-9. Hello World  
-```
-$ sudo docker run hello-world
-```
-
-10. Check version
+9. Check version
 ```
 $ sudo docker --version
 ```
 
+10. Hello World  
+```
+$ sudo docker run hello-world
+```
