@@ -45,5 +45,5 @@ $ docker run -d --name kong \
 
 # Reference
 
-- [https://hub.docker.com/_/kong](https://hub.docker.com/_/kong) 
-- [https://docs.konghq.com/1.1.x/configuration/#postgres-settings](https://docs.konghq.com/1.1.x/configuration/#postgres-settings)
+- https://hub.docker.com/_/kong
+- https://docs.konghq.com/1.1.x/configuration/#postgres-settings
