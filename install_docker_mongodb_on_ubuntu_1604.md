@@ -35,7 +35,7 @@ $ docker exec -it mongodb mongo admin
 > db.auth("admin","secure")
 ```
 
-7. Create new database 
+7. Create new database (change database)
 ```
 > use mydb 
 ```
@@ -54,12 +54,17 @@ $ docker exec -it mongodb mongo admin
 > db.getUsers()
 ```
 
-10. Drop user on current database (mydb)
+10. Test authen by test on current database (mydb)
+```
+> db.auth("test","123456")
+```
+
+11. Drop user on current database (mydb)
 ```
 > db.dropUser("test")
 ```
 
-11. Exit mongodb command
+12. Exit mongodb command
 ```
 > exit 
 ```
