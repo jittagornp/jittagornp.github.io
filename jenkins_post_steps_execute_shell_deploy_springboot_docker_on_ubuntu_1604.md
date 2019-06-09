@@ -67,3 +67,11 @@ ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 <REMOTE_USER>@<REMOTE_SERVER> \
 'docker build -t <DOCKER_IMAGE_NAME> -f ~/deploy/<PROJECT_NAME>/Dockerfile ~/deploy/<PROJECT_NAME>'
 ```
+### 3.7 Run container
+
+```
+ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
+-o StrictHostKeyChecking=no \
+<REMOTE_USER>@<REMOTE_SERVER> \
+'docker run -d -p <MAP_PORT>:8080 --add-host=<MAP_HOST>:<MAP_IP> --add-host=<MAP_HOST>:<MAP_IP> --name <CONTAINER_NAME> <DOCKER_IMAGE_NAME>'
+```
