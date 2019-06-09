@@ -25,9 +25,18 @@ ssh -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 
 ### 3.3 Copy .jar and Dockerfile to remote server 
 
+Copy .jar
 ```
 scp -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
 -o StrictHostKeyChecking=no \
 $JENKINS_HOME/workspace/<PROJECT_NAME>/target/*.jar \
 <REMOTE_USER>@<REMOTE_SERVER>:~/deploy/<PROJECT_NAME>/target 
+```
+
+Copy Dockerfile
+```
+scp -i $JENKINS_HOME/<PRIVATE_KEY_FILE> \
+-o StrictHostKeyChecking=no \
+$JENKINS_HOME/workspace/<PROJECT_NAME>/Dockerfile \
+<REMOTE_USER>@<REMOTE_SERVER>:~/deploy/<PROJECT_NAME>
 ```
