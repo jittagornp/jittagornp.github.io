@@ -1,4 +1,4 @@
-# Install Docker on Ubuntu 16.04 (LTS) 
+# Install Docker on Ubuntu 18.04
 
 > Docker version 18.09.6, build 481bc77  
 
