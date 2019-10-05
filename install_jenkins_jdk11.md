@@ -20,3 +20,17 @@ $ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   jenkins/jenkins:jdk11  
   ```
+  
+  # Run Pipeline
+  
+ error
+```
+....
+....docker.sock: connect: permission denied
+...
+```
+run command
+```shell
+$ sudo usermod -aG docker $USER
+$ sudo reboot  
+```
