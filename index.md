@@ -21,6 +21,7 @@
 
 ### Command
 
+- [Linux Command](linux_command.md)  
 - [Docker Command](docker_command.md) 
 
 ### Configuration
