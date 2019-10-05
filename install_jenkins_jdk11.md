@@ -29,8 +29,7 @@ $ docker run -d \
 ....docker.sock: connect: permission denied
 ...
 ```
-run command
+quick fix : but not secure, run command
 ```shell
-$ sudo usermod -aG docker $USER
-$ sudo reboot  
+$ sudo chmod 777 /var/run/docker.sock
 ```
