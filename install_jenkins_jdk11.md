@@ -1,6 +1,17 @@
 # Install Jenkins JDK 11    
 
-1. run docker 
+1. make directory 
+```shell
+$ cd ~   
+$ mkdir jenkins_home
+```
+
+2. set priority
+```shell
+$ chmod 777 jenkins_home
+```
+
+3. run docker 
 ```shell  
 $ docker run -d \
   -p 80:8080 \
@@ -8,8 +19,3 @@ $ docker run -d \
   -v ~/jenkins_home:/var/jenkins_home \
   jenkins/jenkins:jdk11
   ```
-2. set priority
-```shell
-$ cd ~   
-$ chmod 777 jenkins_home/
-```
