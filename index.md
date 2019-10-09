@@ -4,6 +4,9 @@
 
 # Content
 
+### Install Kubernetes (K8S)
+- [Install K8S (on premise) on Ubuntu 18.04](install_java_on_ubuntu_1604.md)
+
 ### Install Docker 
 - [Install Docker on Ubuntu 18.04](install_docker_on_ubuntu_1804.md)
 - [Install Jenkins JDK 11](install_jenkins_jdk11.md)
