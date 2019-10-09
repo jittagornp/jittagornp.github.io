@@ -5,7 +5,7 @@
 # Content
 
 ### Install Kubernetes (K8S)
-- [Install K8S (on premise) on Ubuntu 18.04](install_java_on_ubuntu_1604.md)
+- [Install K8S (on premise) on Ubuntu 18.04](install_k8s_ubuntu1804.md)
 
 ### Install Docker 
 - [Install Docker on Ubuntu 18.04](install_docker_on_ubuntu_1804.md)
