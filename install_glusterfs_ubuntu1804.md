@@ -56,9 +56,9 @@ $ glusterfsd --version
 10) create directory for share in cluster 
 ```
 $ mkdir -p /storage
-``
-
+```
 # Only glusterfs-node1
+  
 1) add server to glusterfs storage pool
 ```
 $ gluster peer probe glusterfs-node2  
