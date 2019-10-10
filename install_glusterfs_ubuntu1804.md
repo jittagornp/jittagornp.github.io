@@ -150,4 +150,16 @@ add configuration
 glusterfs-node1:/volume-01 /storage glusterfs defaults,_netdev 0 0  
 ```
 
+# Test On Client-node
+```
+$ cd /storage
+$ touch file01 file02 file03  
+```
+
+# On glusterfs-node1 & glusterfs-node2 
+```
+$ cd /storage
+$ ll
+```
+
 Reference : https://www.howtoforge.com/tutorial/high-availability-storage-with-glusterfs-on-ubuntu-1804/  
