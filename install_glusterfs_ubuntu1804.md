@@ -112,27 +112,36 @@ add configs
 10.130.15.87 glusterfs-node1
 10.130.117.8 glusterfs-node2
 ```
-2) install glusterfs client 
+2)  download glusterfs public-key  
+see version on [https://download.gluster.org/pub/gluster/glusterfs/](https://download.gluster.org/pub/gluster/glusterfs/)
+```
+$ wget -O- https://download.gluster.org/pub/gluster/glusterfs/6/rsa.pub | apt-key add -  
+```
+3) add repository
+```
+$ sudo add-apt-repository ppa:gluster/glusterfs-6  
+```
+4) install glusterfs client 
 ```
 $ sudo apt install glusterfs-client -y
 ```
-3) create mount directory 
+5) create mount directory 
 ```
 $ mkdir -p /storage  
 ``` 
-4) mount to volumn (glusterfs-node1:/volume-01)
+6) mount to volumn (glusterfs-node1:/volume-01)
 ```
 $ sudo mount -t glusterfs glusterfs-node1:/volume-01 /storage  
 ```
 > `/storage` is directory on `client-node`   
 
-5) check available volume
+7) check available volume
 ```
 $ df -h /storage  
 ```
 > `/storage` is directory on `client-node`   
 
-6) set permanent mount 
+8) set permanent mount 
 ```
 $ vim /etc/fstab
 ```
