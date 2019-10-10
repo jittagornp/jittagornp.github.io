@@ -5,7 +5,7 @@
 - Linux Ubuntu 18.04    
 - Nodes  
 ```
-1. client node :   
+1. client-node : xxxxx  
 2. glusterfs-node1 : 10.130.15.87
 3. glusterfs-node2 : 10.130.117.8    
 ```
@@ -97,4 +97,44 @@ $ gluster volume start volume-01
 6) show volume info  
 ```
 $ gluster volume info volume-01   
+```
+
+# On client-node
+
+1) edit hosts (map ip & hostname) 
+```
+$ vi /etc/hosts
+```
+add configs
+```
+10.130.15.87 glusterfs-node1
+10.130.117.8 glusterfs-node2
+```
+2) install glusterfs client 
+```
+$ sudo apt install glusterfs-client -y
+```
+3) create mount directory 
+```
+$ mkdir -p /storage  
+``` 
+4) mount to volumn (glusterfs-node1:/volume-01)
+```
+$ sudo mount -t glusterfs glusterfs-node1:/volume-01 /storage  
+```
+> `/storage` is directory on `client-node`   
+
+5) check available volume
+```
+$ df -h /storage  
+```
+> `/storage` is directory on `client-node`   
+
+6) set permanent mount 
+```
+$ vim /etc/fstab
+```
+add configuration
+```
+glusterfs-node1:/volume-01 /storage glusterfs defaults,_netdev 0 0  
 ```
