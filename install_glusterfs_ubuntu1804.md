@@ -26,6 +26,7 @@ add configs
 $ sudo apt install software-properties-common -y
 ```
 3)  download glusterfs public-key  
+see version on [https://download.gluster.org/pub/gluster/glusterfs/](https://download.gluster.org/pub/gluster/glusterfs/)
 ```
 $ wget -O- https://download.gluster.org/pub/gluster/glusterfs/6/rsa.pub | apt-key add -  
 ```
