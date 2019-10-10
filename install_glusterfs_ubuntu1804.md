@@ -1,6 +1,6 @@
 # Install GlusterFS on Ubuntu 18.04 
 
-# Envioments
+# Environments
 
 - Linux Ubuntu 18.04    
 - Node  
