@@ -72,6 +72,7 @@ $ gluster peer status
 $ gluster pool list  
 ```
 4) create volume (select 4.1 or 4.2)   
+  
 4.1) replica 
 ```
 $ gluster volume create volume-01 replica 2 transport tcp \
@@ -79,4 +80,20 @@ glusterfs-node1:/storage \
 glusterfs-node2:/storage \
 force
 ```
-> volume-01 is name of volume   
+4.2) distribute  
+```
+$ gluster volume create volume-01 transport tcp \
+glusterfs-node1:/storage \
+glusterfs-node2:/storage \
+force
+```
+> `volume-01` is name of volume   
+
+5) start volume 
+```
+$ gluster volume start volume-01  
+```
+6) show volume info  
+```
+$ gluster volume info volume-01   
+```
