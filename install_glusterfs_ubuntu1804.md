@@ -1,5 +1,7 @@
 # Install GlusterFS on Ubuntu 18.04 
 
+<img src="glusterfs.png" alt="glusterfs.png" width="400"/>
+
 # Environments
 
 - Linux Ubuntu 18.04    
