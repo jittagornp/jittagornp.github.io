@@ -62,7 +62,7 @@ $ mkdir -p /storage
 1) add server to glusterfs storage pool
 ```
 $ gluster peer probe glusterfs-node2  
-``
+```
 2) check status
 ```
 $ gluster peer status
@@ -71,3 +71,12 @@ $ gluster peer status
 ```
 $ gluster pool list  
 ```
+4) create volume (select 4.1 or 4.2)   
+4.1) replica 
+```
+$ gluster volume create volume-01 replica 2 transport tcp \
+glusterfs-node1:/storage \
+glusterfs-node2:/storage \
+force
+```
+> volume-01 is name of volume   
