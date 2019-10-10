@@ -138,3 +138,5 @@ add configuration
 ```
 glusterfs-node1:/volume-01 /storage glusterfs defaults,_netdev 0 0  
 ```
+
+Reference : https://www.howtoforge.com/tutorial/high-availability-storage-with-glusterfs-on-ubuntu-1804/  
