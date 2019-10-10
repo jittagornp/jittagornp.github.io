@@ -45,3 +45,11 @@ $ sudo systemctl start glusterd
 ```
 $ sudo systemctl enable glusterd
 ```
+8) show glusterfs status
+```
+$ systemctl status glusterd
+```
+9) show glusterfs version
+```
+$ glusterfsd --version
+```
