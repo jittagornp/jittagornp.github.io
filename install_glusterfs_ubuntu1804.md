@@ -3,7 +3,7 @@
 # Environments
 
 - Linux Ubuntu 18.04    
-- Node  
+- Nodes  
 ```
 1. client node :   
 2. glusterfs-node1 : 10.130.15.87
@@ -12,7 +12,7 @@
 
 # On glusterfs-node1 & glusterfs-node2 
 
-1) edit `/etc/hosts`
+1) edit hosts (map ip & hostname) 
 ```
 $ vi /etc/hosts
 ```
