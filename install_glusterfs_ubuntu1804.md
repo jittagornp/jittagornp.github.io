@@ -37,3 +37,11 @@ $ sudo add-apt-repository ppa:gluster/glusterfs-6
 ```
 $ sudo apt install glusterfs-server -y
 ```
+6) start glusterfs service
+```
+$ sudo systemctl start glusterd
+```
+7) enabled run everytime at system boot 
+```
+$ sudo systemctl enable glusterd
+```
