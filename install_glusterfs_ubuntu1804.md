@@ -1,4 +1,4 @@
-# Install GlusterFS on Ubuntu 18.04 
+# Install GlusterFS (Distribute Storage) on Ubuntu 18.04 
 
 <img src="glusterfs.png" alt="glusterfs.png" width="400"/>
 
