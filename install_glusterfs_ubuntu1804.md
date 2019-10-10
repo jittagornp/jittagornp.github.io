@@ -151,12 +151,15 @@ glusterfs-node1:/volume-01 /storage glusterfs defaults,_netdev 0 0
 ```
 
 # Test On Client-node
+
+try create empty file file01, file02, file03  
 ```
 $ cd /storage
 $ touch file01 file02 file03  
 ```
 
-# On glusterfs-node1 & glusterfs-node2 
+# On glusterfs-node1 & glusterfs-node2
+show file on glusterfs node
 ```
 $ cd /storage
 $ ll
