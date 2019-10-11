@@ -75,7 +75,15 @@ $ mkdir -p $HOME/.kube
 ```
 $ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 ```
-4) set file ower
+4) change file ower
 ```
 $ sudo chown $(id -u):$(id -g) $HOME/.kube/config  
+```
+5) install `kube-flannel` addons for network configurations
+```
+$ kubectl apply -f \ https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml  
+```
+6) check nodes
+```
+$ kubectl get nodes  
 ```
