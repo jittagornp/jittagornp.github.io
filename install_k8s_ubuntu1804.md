@@ -28,7 +28,7 @@ then comment this line
 $ sudo apt-get update
 $ sudo apt install -y apt-transport-https
 ```
-4) add ap-key 
+4) add api-key 
 ```
 $ curl -s \
     https://packages.cloud.google.com/apt/doc/apt-key.gpg |\
