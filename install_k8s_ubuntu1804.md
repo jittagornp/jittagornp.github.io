@@ -100,3 +100,12 @@ $ kubeadm join <MASTER_NODE_IP>:6443 --token jtadhb.cv1o6qi62g1n85s9 --discovery
 ```
 
 this command, from topic `Only Master Node` 1) 
+
+# Back to Master Node
+
+1) run check nodes  
+```
+$ kubectl get nodes  
+```
+
+Reference : https://spalinux.com/2018/09/install-and-configure-kubernetes-on-ubuntu-18-04  
