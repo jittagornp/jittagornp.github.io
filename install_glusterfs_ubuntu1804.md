@@ -13,11 +13,11 @@
 ```
 
 # Steps
-1. Install GlusterFS on Storage Server
+1. Install `glusterfs-server` on Storage Server
 2. Create Mount Point on Storage Server  
 3. Set Storage Pool 
 4. Create Volume
-5. Install GlusterFS Client 
+5. Install `glusterfs-client` 
 6. Create Mount Point on Client
 7. Bind Mount Point to Volume 
 
