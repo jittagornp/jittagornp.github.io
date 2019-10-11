@@ -1,7 +1,5 @@
 # Install Kubernetes (On-Premise) on Ubuntu 18.04
 
-> TODO
-
 # Requires
 - At least 2 vCPU
 - Memory 2 GB 
@@ -14,6 +12,11 @@ master node : 10.130.38.189
 worker node1 : 10.130.38.192
 worker node2 : 10.130.38.200
 ```
+
+# Steps
+1. Install k8s for all nodes
+2. Setup Master Node
+3. Worker Node Join The Cluster 
 
 # All Nodes
 
