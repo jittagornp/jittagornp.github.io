@@ -57,7 +57,7 @@ $ kubectl --help
 $ kubelet --help
 ```
 
-# Master Node 
+# Only Master Node 
 
 1) run this command for initial master node
 ```
