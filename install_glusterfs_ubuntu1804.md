@@ -19,7 +19,7 @@
 4. Create Volume
 5. Install `glusterfs-client` 
 6. Create Mount Point on Client
-7. Bind Mount Point to Volume 
+7. Bind Mount Point from Client to Storage Volume 
 
 # On glusterfs-node1 & glusterfs-node2 
 
