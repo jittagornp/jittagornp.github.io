@@ -53,6 +53,14 @@ will install kubeadm, kubectl and kubelet
 8) check
 ```
 $ kubeadm --help
-$ kubectl --hetlp 
+$ kubectl --help 
 $ kubelet --help
+```
+
+# Master Node 
+
+1) run this command for initial master node
+```
+$ sudo kubeadm init \
+    --pod-network-cidr=10.244.0.0/16  
 ```
