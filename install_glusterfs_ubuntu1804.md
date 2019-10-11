@@ -12,6 +12,15 @@
 3. glusterfs-node2 : 10.130.117.8    
 ```
 
+# Steps
+1. Install GlusterFS on Storage Server
+2. Create Mount Point on Storage Server  
+3. Set Storage Pool 
+4. Create Volume
+5. Install GlusterFS Client 
+6. Create Mount Point on Client
+7. Bind Mount Point to Volume 
+
 # On glusterfs-node1 & glusterfs-node2 
 
 1) edit hosts (map ip & hostname) 
