@@ -61,10 +61,21 @@ $ kubelet --help
 
 1) run this command for initial master node
 ```
-$ sudo kubeadm init \
-    --pod-network-cidr=10.244.0.0/16  
+$ sudo kubeadm init --pod-network-cidr=10.244.0.0/16  
 ```
-*** when finised please copy this block command at bottom to text editor (nodepad++)
+*** when finised please copy this block command at the bottom to text editor (nodepad++) and save 
 ```
 kubeadm join <MASTER_NODE_IP>:6443 --token jtadhb.cv1o6qi62g1n85s9 --discovery-token-ca-cert-hash sha256:ffd679b0444cb1d8dd67dab42e232c9...
+```
+2) create directory `.kube`
+```
+$ mkdir -p $HOME/.kube  
+```
+3) copy admin config to `.kube`
+```
+$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+```
+4) set file ower
+```
+$ sudo chown $(id -u):$(id -g) $HOME/.kube/config  
 ```
