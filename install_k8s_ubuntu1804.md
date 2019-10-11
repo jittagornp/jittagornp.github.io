@@ -2,6 +2,10 @@
 
 > TODO
 
+# Requires
+- At least 2 vCPU
+- Memory 2 GB 
+
 # Environments
 - Linux Ubuntu 18.04
 - Nodes
