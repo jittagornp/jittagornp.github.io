@@ -1,5 +1,7 @@
 # Install Kubernetes (On-Premise) on Ubuntu 18.04
 
+<img src="k8s-cluster.png" alt="k8s-cluster.png" width="400"/>
+
 # Requires
 - At least 2 vCPU
 - Memory 2 GB 
