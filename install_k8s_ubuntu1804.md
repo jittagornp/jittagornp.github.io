@@ -16,7 +16,7 @@ worker node2 : 10.130.38.200
 ```
 
 # Steps
-1. Install docker and k8s all nodes
+1. Install Docker and K8S all nodes
 2. Setup Master Node
 3. Worker Node Join The Cluster 
 
