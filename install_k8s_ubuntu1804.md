@@ -88,7 +88,7 @@ $ kubectl apply -f \ https://raw.githubusercontent.com/coreos/flannel/master/Doc
 $ kubectl get nodes  
 ```
 
-# Anothers Node (Except Master Node)
+# Other Nodes (Except Master Node)
 
 1) run command for join the cluster
 ```
