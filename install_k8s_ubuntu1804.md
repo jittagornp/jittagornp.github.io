@@ -28,7 +28,7 @@ worker node2 : 10.130.38.200
 $ sudo swapoff -a
 $ sudo vi /etc/fstab  
 ```
-then comment this line
+then comment this line (if found)
 ```
 #/swap.img  none    swap    sw  0    0 
 ```
