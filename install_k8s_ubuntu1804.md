@@ -39,8 +39,20 @@ $ curl -s \
 $ sudo touch /etc/apt/sources.list.d/kubernetes.list
 ```
 6) update file `kubernetes.list`    
-``
+```
 $ echo \
     "deb http://apt.kubernetes.io/ kubernetes-xenial main" |\
     sudo tee -a /etc/apt/sources.list.d/kubernetes.list
-``
+```
+7) install kubeadm  
+```
+$ sudo apt update   
+$ sudo apt install -y kubeadm  
+```
+will install kubeadm, kubectl and kubelet  
+8) check
+```
+$ kubeadm --help
+$ kubectl --hetlp 
+$ kubelet --help
+```
