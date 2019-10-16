@@ -15,7 +15,7 @@ $ chmod 777 jenkins_home
 ```shell  
 $ docker run -d \
   --name jenkins \ 
-  --restart=always 
+  --restart=always \ 
   -p 80:8080 \
   -p 50000:50000 \
   -v ~/jenkins_home:/var/jenkins_home \
