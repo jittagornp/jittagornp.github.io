@@ -59,7 +59,7 @@ run คำสั่งดังต่อไปนี้
 ```shell
 $ npx create-nuxt-app nuxtjs
 ```
-- nuxt คือ ชื่อ folder  
+- nuxtjs คือ ชื่อ folder  
   
 กรอกข้อมูลต่าง ๆ ลงไปดังนี้
   
@@ -77,10 +77,10 @@ $ npx create-nuxt-app nuxtjs
   
 จากนั้นรอให้ yarn install package ต่างๆ ให้ (อย่าลืมต่อ internet น่ะ)  
 
-### 5. ลบไฟล์ .git ให้ folder nuxt ออก
+### 5. ลบไฟล์ .git ใน folder nuxtjs ออก
 ให้ไปใช้ .git ที่ root maven project แทน
 
-### 6. ย้าย .gitignore ใน folder nuxt 
+### 6. ย้าย .gitignore ใน folder nuxtjs 
 ไปไว้ที่ root mavn project จากนั้น แก้ทุก ignore ให้เติม prefix `nuxtjs/`  
 จากนั้นเพิ่ม ignore ดังต่อไปนี้เข้าไป  
 ```
