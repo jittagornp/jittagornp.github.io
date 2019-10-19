@@ -73,6 +73,9 @@ $ npx create-nuxt-app nuxt
 - Choose linting tools ...เลือก Linting tools ผมเลือกใช้ `ESLint`   
 - Choose test framework ...เลือก test framework ผมเลือกใช้ `Jest`  
 - Choose rendering mode ...เลือก rendering mode ผมเลือกเป็น `Single Page Application`   
+- Choose development tools ...เลือก development tools ตอนนี้มีให้เลือกอันเดียวคือใช้ `jsconfig.json`  
+  
+จากนั้นรอให้ yarn install package ต่างๆ ให้ (อย่าลืมต่อ internet น่ะ)  
 
 
 
