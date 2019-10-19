@@ -60,13 +60,20 @@ run คำสั่งดังต่อไปนี้
 $ npx create-nuxt-app nuxt
 ```
 - nuxt คือ ชื่อ folder  
+  
 กรอกข้อมูลต่าง ๆ ลงไปดังนี้
-```
+  
 - Project name ...ชื่อโปรเจ็คที่เราจะตั้ง
 - Project description ...คำอธิบายโปรเจ็ค
 - Author name ...ชื่อผู้แต่ง/ผู้เขียน
-- Choose the package manager เลือก package manager ในที่นี้ผมจะเลือกใช้ `yarn` ครับ
-```
+- Choose the package manager ...เลือก package manager ในที่นี้ผมจะเลือกใช้ `yarn` ครับ
+- Choose UI framework ...เลือก UI framework ในที่นี้ผมจะเลือก `None` (เดี๋ยวค่อยหามาใส่เองทีหลัง)  
+- Choose custom server framework ...เลือก server framework ในที่นี้ก็เลือก `None` เพราะ server เราใช้ spring-boot อยู่แล้ว  
+- Choose Nuxt.js modules ...เลือก Nuxt.js modules ในที่นี้ผมเลือกเป็น `Axios` ครับ
+- Choose linting tools ...เลือก Linting tools ผมเลือกใช้ `ESLint`   
+- Choose test framework ...เลือก test framework ผมเลือกใช้ `Jest`  
+- Choose rendering mode ...เลือก rendering mode ผมเลือกเป็น `Single Page Application`   
+
 
 
 
