@@ -98,6 +98,26 @@ src/main/resources/static/
 ```
 
 
+### 8. แก้ไฟล์ nuxtjs/nuxt.config
+แก้ dist path ให้ชี้ไปที่ `../src/main/resources/static`
+```
+export default {
+  mode: 'spa',
+  generate: {
+    dir: '../src/main/resources/static'
+  },
+  ...
+  ...
+``
+
+### 7. เข้าไปที่ folder nuxtjs แล้วลอง build nuxt  
+```
+$ cd nuxtjs
+yarn build  
+```
+
+
+
 
 
 
