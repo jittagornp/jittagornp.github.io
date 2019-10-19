@@ -54,5 +54,12 @@ public class IndexController {
 }
 
 ```
+### 4. สร้าง Nuxt project ที่ root maven project
+run คำสั่งดังต่อไปนี้
+```shell
+$ npx create-nuxt-app nuxt
+```
+- nuxt คือ ชื่อ folder  
+
 
 
