@@ -98,7 +98,7 @@ src/main/resources/static/
 ```
 
 
-### 8. แก้ไฟล์ nuxtjs/nuxt.config
+### 7. แก้ไฟล์ nuxtjs/nuxt.config
 แก้ dist path ให้ชี้ไปที่ `../src/main/resources/static`
 ```
 export default {
@@ -108,13 +108,22 @@ export default {
   },
   ...
   ...
-``
+```
 
-### 7. เข้าไปที่ folder nuxtjs แล้วลอง build nuxt  
+### 8. ลอง build nuxt.js    
 ```
 $ cd nuxtjs
 yarn build  
 ```
+จะพบว่ามีการสร้าง index.html ไว้ที่ `src/main/resources/static`
+
+### 9. ลอง run spring-boot 
+```
+$ mvn spring-boot:run ที่ root maven project 
+```
+ก็เป็นอันเสร็จเรียบร้อย  
+
+# หมายเหตุ
 
 
 
