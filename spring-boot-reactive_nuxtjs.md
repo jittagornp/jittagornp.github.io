@@ -57,7 +57,7 @@ public class IndexController {
 ### 4. สร้าง Nuxt project ที่ root maven project
 run คำสั่งดังต่อไปนี้
 ```shell
-$ npx create-nuxt-app nuxt
+$ npx create-nuxt-app nuxtjs
 ```
 - nuxt คือ ชื่อ folder  
   
@@ -76,6 +76,17 @@ $ npx create-nuxt-app nuxt
 - Choose development tools ...เลือก development tools ตอนนี้มีให้เลือกอันเดียวคือใช้ `jsconfig.json`  
   
 จากนั้นรอให้ yarn install package ต่างๆ ให้ (อย่าลืมต่อ internet น่ะ)  
+
+### 5. ลบไฟล์ .git ให้ folder nuxt ออก
+ให้ไปใช้ .git ที่ root maven project แทน
+
+### 6. ย้าย .gitignore ใน folder nuxt 
+ไปไว้ที่ root mavn project จากนั้น แก้ทุก ignore ให้เติม prefix `nuxtjs/`  
+จากนั้นเพิ่ม ignore ดังต่อไปนี้เข้าไป  
+```
+target/
+src/main/resources/static/  
+```
 
 
 
