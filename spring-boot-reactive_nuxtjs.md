@@ -30,7 +30,8 @@ public class AppStarter {
 ```
 
 ### 3. เขียน controller 
-เนื่องจากเราจะใช้ Nuxt.js ใน mode SPA (Single Page Application) เราจะต้องเขียน router ให้รองรับกับ nuxt (vue) route ดังนี้
+เนื่องจากเราจะใช้ Nuxt.js ใน mode SPA (Single Page Application)   
+เราจะต้องเขียน router ให้รองรับกับ nuxt (vue) route ดังนี้
 ```java
 @Controller
 public class IndexController {
@@ -98,7 +99,7 @@ src/main/resources/static/
 ```
 
 
-### 7. แก้ไฟล์ nuxtjs/nuxt.config
+### 7. แก้ไฟล์ nuxtjs/nuxt.config.js  
 แก้ dist path ให้ชี้ไปที่ `../src/main/resources/static`
 ```
 export default {
@@ -123,7 +124,28 @@ $ mvn spring-boot:run ที่ root maven project
 ```
 ก็เป็นอันเสร็จเรียบร้อย  
 
-# หมายเหตุ
+# Note
+### การใช้งาน yarn
+
+ใช้สำหรับ dev (http://localhost:3000)
+```
+$ cd nuxtjs
+$ yarn dev
+```
+
+ใช้สำหรับ build production
+```
+$ cd nuxtjs
+$ yarn build  
+```
+
+ใช้สำหรับ test
+```
+$ yarn test  
+```
+
+
+
 
 
 
