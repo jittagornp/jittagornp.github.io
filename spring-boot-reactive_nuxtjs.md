@@ -1,6 +1,6 @@
 # การเขียน Spring-boot Reactive + Nuxt.js 
 
-### 1. ทำการ spring-boot project    
+### 1. ทำการสร้าง spring-boot project    
 add dependencies ดังต่อไปนี้ 
 ```xml
 ...
@@ -30,7 +30,7 @@ public class AppStarter {
 ```
 
 ### 3. เขียน controller 
-เนื่องจากเราจะใช้ Nuxt.js ใน mode SPA (Single Page Application) เราจะต้องเขียน router ให้รอรับกับ nuxt (vue) route ดังนี้
+เนื่องจากเราจะใช้ Nuxt.js ใน mode SPA (Single Page Application) เราจะต้องเขียน router ให้รองรับกับ nuxt (vue) route ดังนี้
 ```java
 @Controller
 public class IndexController {
@@ -60,6 +60,14 @@ run คำสั่งดังต่อไปนี้
 $ npx create-nuxt-app nuxt
 ```
 - nuxt คือ ชื่อ folder  
+กรอกข้อมูลต่าง ๆ ลงไปดังนี้
+```
+- Project name ...ชื่อโปรเจ็คที่เราจะตั้ง
+- Project description ...คำอธิบายโปรเจ็ค
+- Author name ...ชื่อผู้แต่ง/ผู้เขียน
+- Choose the package manager เลือก package manager ในที่นี้ผมจะเลือกใช้ `yarn` ครับ
+```
+
 
 
 
