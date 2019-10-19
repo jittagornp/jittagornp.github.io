@@ -82,6 +82,15 @@ $ npx create-nuxt-app nuxtjs
 
 ### 6. ย้าย .gitignore ใน folder nuxtjs 
 ไปไว้ที่ root mavn project จากนั้น แก้ทุก ignore ให้เติม prefix `nuxtjs/`  
+```
+nuxtjs/logs
+nuxtjs/*.log
+nuxtjs/npm-debug.log*
+nuxtjs/yarn-debug.log*
+nuxtjs/yarn-error.log*
+...
+...
+```
 จากนั้นเพิ่ม ignore ดังต่อไปนี้เข้าไป  
 ```
 target/
