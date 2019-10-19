@@ -125,9 +125,22 @@ $ mvn spring-boot:run ที่ root maven project
 ก็เป็นอันเสร็จเรียบร้อย  
 
 # Note
+
+จะต้อง install node.js และ yarn ก่อนน่ะ    
+node.js สามารถ download ได้ที่ [https://nodejs.org/en/download/](https://nodejs.org/en/download/)  
+ส่วน yarn สามารถ install ผ่าน npm ได้ดังนี้
+
+```
+$ npm install yarn -g 
+```
+
+กรณีถ้ามี package บางตัว require python สามารถ download ได้จาก [https://www.python.org/downloads/](https://www.python.org/downloads/)  
+ลองสังเกต version ว่าเป็น version อะไร  ปกติจะเป็น `Python 2.7.16`  
+
+
 ### การใช้งาน yarn
 
-ใช้สำหรับ dev (http://localhost:3000)
+ใช้สำหรับ dev [http://localhost:3000](http://localhost:3000)
 ```
 $ cd nuxtjs
 $ yarn dev
