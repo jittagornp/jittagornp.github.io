@@ -40,3 +40,6 @@ $ docker login {DOMAIN_NAME} -u {USERNAME}
 ```shell 
 $ docker logout {DOMAIN_NAME}
 ```
+2.5 see images
+
+> https://{DOMAIN_NAME}/v2/_catalog
