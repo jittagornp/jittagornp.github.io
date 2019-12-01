@@ -19,6 +19,7 @@
 - [Install Docker Jenkins on Ubuntu 16.04](install_docker_jenkins_on_ubuntu_1604.md) 
 - [Install Docker Sonarqube on Ubuntu 16.04](install_docker_sonarqube_on_ubuntu_1604.md) 
 - [Install Docker Zipkin on Ubuntu 16.04](install_docker_zipkin_on_ubuntu_1604.md) 
+- [Install Docker Registry](install_docker_registry.md)
 
 ### Install Other Software
 
