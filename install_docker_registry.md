@@ -1,7 +1,7 @@
 # Install Docker Registry
 
 ### Required
-- domain name for map to this instance 
+- domain name for map to this instance (required https)
 
 ### 1. Install Docker 
 ### 2. Install Registry
