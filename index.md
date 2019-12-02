@@ -20,6 +20,7 @@
 - [Install Docker Sonarqube on Ubuntu 16.04](install_docker_sonarqube_on_ubuntu_1604.md) 
 - [Install Docker Zipkin on Ubuntu 16.04](install_docker_zipkin_on_ubuntu_1604.md) 
 - [Install Docker Registry](install_docker_registry.md)
+- [Install Docker Postgresql on Ubuntu 18.04](install_docker_postgresql_on_ubuntu1804.md)
 
 ### Install Other Software
 
