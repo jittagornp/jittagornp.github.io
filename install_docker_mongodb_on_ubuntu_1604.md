@@ -20,7 +20,7 @@ $ docker exec -it mongodb mongo admin
 ```
 > db.createUser({
   user: "admin", 
-  pwd: "secure", 
+  pwd: "<ADMIN_PASSWORD>", 
   roles: [ { role: "root", db: "admin" } ]
 })
 ```
@@ -32,36 +32,36 @@ $ docker exec -it mongodb mongo admin
 
 6. Test authen by admin
 ```
-> db.auth("admin","secure")
+> db.auth("admin","<ADMIN_PASSWORD>")
 ```
 
 7. Create new database (change database)
 ```
-> use mydb 
+> use <NEW_DATABASE> 
 ```
 
-8. Create new user on mydb database
+8. Create new user on <NEW_DATABASE> database
 ```
 > db.createUser({
-  user: "test", 
-  pwd: "123456", 
-  roles: [ { role: "dbOwner", db: "mydb" } ]
+  user: "<NEW_USERNAME>", 
+  pwd: "<NEW_PASSWORD>", 
+  roles: [ { role: "dbOwner", db: "<NEW_DATABASE>" } ]
 })
 ```
 
-9. Show users on current database (mydb)
+9. Show users on current database (<NEW_DATABASE>)
 ```
 > db.getUsers()
 ```
 
-10. Test authen by test on current database (mydb)
+10. Test authen by <NEW_USERNAME> on current database (<NEW_DATABASE>)
 ```
-> db.auth("test","123456")
+> db.auth("<NEW_USERNAME>","<NEW_PASSWORD>")
 ```
 
-11. Drop user on current database (mydb)
+11. Drop user on current database (<NEW_DATABASE>)
 ```
-> db.dropUser("test")
+> db.dropUser("<NEW_USERNAME>")
 ```
 
 12. Exit mongodb command
