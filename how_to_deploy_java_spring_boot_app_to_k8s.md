@@ -116,6 +116,9 @@ $ kubectl apply -f deployment.yml
 $ kubectl apply -f service.yml  
 ```
 
+### 4. Test Access Application
+> http://<MASTER_NODE_IP>:30001
+
 # Note
 
 docker file for create java spring-boot application image
