@@ -18,7 +18,7 @@ body
 }
 ```
 
-1.2 set target servers
+1.2 set target servers  
 http post
 > http://<GATEWAY_IP>:8001/upstreams/oauth.v1.service/target   
 
