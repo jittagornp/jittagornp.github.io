@@ -11,6 +11,9 @@
 - docker registry url `registry.mywebsite.com`
 
 ### 1. Create Private Docker Registry Secret on Master Node
+
+> for keep username and password of docker private registry  
+
 format
 ```sh
 $ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
@@ -29,6 +32,8 @@ $ kubectl create secret docker-registry my-docker-registry \
 ```
 
 ### 2. Create ConfigMap on Master Node
+
+> for keep configuration of application  
 
 2.1 create .env file  
 oauth.env  
