@@ -20,7 +20,7 @@ $ cp kong.conf.default kong.conf
 $ vi kong.conf  
 ```
 Remove comments and set config following    
-/etc/kong/`kong.conf`  
+/etc/kong/`kong.conf`    
 ```properties
 ...
 ...
