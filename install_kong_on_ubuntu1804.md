@@ -29,17 +29,17 @@ admin_listen = 0.0.0.0:8001, 127.0.0.1:8444 ssl
 
 database = postgres
 
-pg_host = <DATABASE_IP>
+pg_host = {DATABASE_IP}
 
-pg_port = <DATABASE_PORT>
+pg_port = {DATABASE_PORT}
 
-pg_user = <DATABASE_USERNAME>
+pg_user = {DATABASE_USERNAME}
 
-pg_password = <DATABASE_PASSWORD>
+pg_password = {DATABASE_PASSWORD}
 
-pg_database = <DATABASE_NAME>
+pg_database = {DATABASE_NAME}
 
-pg_schema = <DATABASE_SCHEMA>
+pg_schema = {DATABASE_SCHEMA}
  
 ```  
 save
