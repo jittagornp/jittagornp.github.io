@@ -117,7 +117,7 @@ $ kubectl apply -f service.yml
 ```
 
 ### 4. Test Access Application
-> http://<MASTER_NODE_IP>:30001
+> http://`<MASTER_NODE_IP>`:30001
 
 # Note
 
