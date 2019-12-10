@@ -42,3 +42,20 @@ spec:
           type: DirectoryOrCreate 
 
 ```
+service.yml
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: oauth
+  labels:
+    app.kubernetes.io/name: oauth
+spec:
+  type: NodePort
+  ports:
+    - port: 8080
+      nodePort: 30001
+      name: http
+  selector:
+    app.kubernetes.io/name: oauth
+```
