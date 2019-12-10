@@ -1,4 +1,4 @@
-# How to deploy spring boot application to Kubernetes (K8S)
+# How to deploy java spring boot application to Kubernetes (K8S)
 - application name `oauth`
 - docker registry url `registry.mywebsite.com`
 
