@@ -1,5 +1,4 @@
-# K8S YAML example 
-
+# How deploy application to Kubernetes (K8S)
 - application name `oauth`
 - docker registry url `registry.pamarin.com`
 
