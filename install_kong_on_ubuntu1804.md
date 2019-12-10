@@ -22,8 +22,6 @@ $ vi kong.conf
 Remove comments and set config following    
 /etc/kong/`kong.conf`    
 ```properties  
-...  
-...  
 
 proxy_listen = 0.0.0.0:80, 0.0.0.0:443 ssl
 
@@ -42,8 +40,7 @@ pg_password = <DATABASE_PASSWORD>
 pg_database = <DATABASE_NAME>
 
 pg_schema = <DATABASE_SCHEMA>
-...  
-...  
+ 
 ```  
 save
 
