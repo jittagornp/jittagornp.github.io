@@ -6,7 +6,7 @@
 - [Write Java Spring-boot Application](https://github.com/jittagornp/spring-boot-webflux-example/tree/master/spring-boot-webflux-dockerfile) then push image to private registry  
 - [Setup K8S Cluster](install_k8s_ubuntu1804.md)  
 
-### Information  
+### Assume 
 - application name `oauth`
 - docker registry url `registry.mywebsite.com`
 
