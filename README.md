@@ -10,6 +10,7 @@
 
 ### Kong
 - [Install Kong on Ubuntu 18.04](install_kong_on_ubuntu1804.md)
+- [Setup Kong Loadbalancing](setup_kong_loadbalancing.md)
 
 ### GlusterFS
 - [Install GlusterFS on Ubuntu 18.04](install_glusterfs_ubuntu1804.md)
