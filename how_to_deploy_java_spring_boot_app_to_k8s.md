@@ -110,7 +110,7 @@ $ kubectl apply -f service.yml
 
 # Note
 
-docker file for created spring-boot application image
+docker file for create java spring-boot application image
 ```Dockerfile
 # Use official base image of Java Runtim
 FROM openjdk:11-jdk
