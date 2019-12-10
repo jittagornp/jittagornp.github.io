@@ -62,3 +62,5 @@ body
   "hosts" : ["auth.mydomainname.com"]
 }
 ```
+
+Reference : [https://docs.konghq.com/1.4.x/loadbalancing/](https://docs.konghq.com/1.4.x/loadbalancing/)
