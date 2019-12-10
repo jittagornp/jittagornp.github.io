@@ -60,3 +60,5 @@ $ kong start -c /etc/kong/kong.conf
 ```
 $ kong stop  
 ```
+
+Reference : [https://docs.konghq.com/install/ubuntu/](https://docs.konghq.com/install/ubuntu/)
