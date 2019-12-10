@@ -20,7 +20,7 @@ body
 
 1.2 set target servers  
 http post
-> http://`<GATEWAY_IP>`:8001/upstreams/oauth.v1.service/target   
+> http://`<GATEWAY_IP>`:8001/upstreams/`oauth.v1.service`/target   
 
 body  
 
@@ -54,7 +54,7 @@ body
 
 ### 3. Add Route
 http post
-> http://`<GATEWAY_IP>`:8001/services/oauth-service/routes
+> http://`<GATEWAY_IP>`:8001/services/`oauth-service`/routes
 
 body
 ```json
