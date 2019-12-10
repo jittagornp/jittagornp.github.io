@@ -2,8 +2,41 @@
 - application name `oauth`
 - docker registry url `registry.mywebsite.com`
 
-### 1. Create deployment file 
 
+### 1. Create Docker Registry Secret on Master Node
+format
+```sh
+$ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
+--docker-server=<DOCKER_REGISTRY_URL> \
+--docker-username=<DOCKER_REGISTRY_USERNAME> \
+--docker-password=<DOCKER_REGISTRY_PASSWORD> \
+--docker-email=<DOCKER_REGISTRY_EMAIL>
+```
+run
+```sh
+$ kubectl create secret docker-registry my-docker-registry \
+--docker-server=http://registry.mywebsite.com \
+--docker-username=my_docker_account \
+--docker-password=WGTSU5V22cEYW9f \
+--docker-email=myemail@gmail.com
+```
+
+### 2. Create ConfigMap on Master Node
+
+2.1 create .env file  
+oauth.env  
+```
+JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Dserver.port=8080 -Dspring.redis.url=redis://.....
+```
+2.2 run command to create config maps
+```
+$ kubectl create configmap oauth-config --from-env-file=/deploy/oauth.env
+```
+
+
+### 3. Deploy
+
+3.1 create deployment file
 deployment.yml
 ```yaml
 apiVersion: apps/v1
@@ -59,22 +92,4 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: oauth
-```
-
-### 2. Create Docker Registry Secret
-format
-```sh
-$ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
---docker-server=<DOCKER_REGISTRY_URL> \
---docker-username=<DOCKER_REGISTRY_USERNAME> \
---docker-password=<DOCKER_REGISTRY_PASSWORD> \
---docker-email=<DOCKER_REGISTRY_EMAIL>
-```
-run
-```sh
-$ kubectl create secret docker-registry my-docker-registry \
---docker-server=http://registry.mywebsite.com \
---docker-username=my_docker_account \
---docker-password=WGTSU5V22cEYW9f \
---docker-email=myemail@gmail.com
 ```
