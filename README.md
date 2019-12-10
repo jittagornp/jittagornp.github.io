@@ -6,7 +6,7 @@
 
 ### Install Kubernetes (K8S)
 - [Install K8S (on premise) on Ubuntu 18.04](install_k8s_ubuntu1804.md)
-- [How to deploy java spring boot application to Kubernetes (K8S)](how_to_deploy_spring_boot_app_to_k8s.md)
+- [How to deploy java spring boot application to Kubernetes (K8S)](how_to_deploy_java_spring_boot_app_to_k8s.md)
 
 ### Install GlusterFS
 - [Install GlusterFS on Ubuntu 18.04](install_glusterfs_ubuntu1804.md)
