@@ -4,14 +4,17 @@
 
 # Content
 
-### Install Kubernetes (K8S)
+### Kubernetes (K8S)
 - [Install K8S (on premise) on Ubuntu 18.04](install_k8s_ubuntu1804.md)
 - [How to deploy java spring boot application to Kubernetes (K8S)](how_to_deploy_java_spring_boot_app_to_k8s.md)
 
-### Install GlusterFS
+### Kong
+- [Install Kong on Ubuntu 18.04](install_kong_on_ubuntu1804.md)
+
+### GlusterFS
 - [Install GlusterFS on Ubuntu 18.04](install_glusterfs_ubuntu1804.md)
 
-### Install Docker 
+### Docker 
 - [Install Docker on Ubuntu 18.04](install_docker_on_ubuntu_1804.md)
 - [Install Jenkins JDK 11](install_jenkins_jdk11.md)
 - [Install Docker Kong With External Postgresql on Ubuntu 18.04](install_docker_kong_with_external_postgresql_on_ubuntu_1804.md)
@@ -23,7 +26,7 @@
 - [Install Docker Registry](install_docker_registry.md)
 - [Install Docker Postgresql on Ubuntu 18.04](install_docker_postgresql_on_ubuntu1804.md)
 
-### Install Other Software
+### Other Software
 
 - [Install Java on Ubuntu 16.04](install_java_on_ubuntu_1604.md) 
 - [Install Maven on Ubuntu 16.04](install_maven_on_ubuntu_1604.md) 
