@@ -1,7 +1,10 @@
 # How to deploy java spring boot application to Kubernetes (K8S)
 
 ### Required
-- [Setup K8S Cluster](install_k8s_ubuntu1804.md)
+
+- [Setup Private Docker Registry](install_docker_registry.md)  
+- [Write Java Spring-boot Application](https://github.com/jittagornp/spring-boot-webflux-example/tree/master/spring-boot-webflux-dockerfile) then push image to private registry  
+- [Setup K8S Cluster](install_k8s_ubuntu1804.md)  
 
 ### Information  
 - application name `oauth`
