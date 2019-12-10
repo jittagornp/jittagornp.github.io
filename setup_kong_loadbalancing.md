@@ -2,7 +2,7 @@
 
 headers all requests  
 ```
-    Content-Type : application/json  
+Content-Type : application/json  
 ```
 
 ### 1. Add Upstreams server
