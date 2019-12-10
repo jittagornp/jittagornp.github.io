@@ -1,5 +1,7 @@
 # Setup Kong Loadbalancing 
 
+![](kong-loadbalancing.png)
+
 headers all requests  
 ```
 Content-Type : application/json  
