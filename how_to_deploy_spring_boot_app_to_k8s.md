@@ -61,7 +61,7 @@ spec:
     app.kubernetes.io/name: oauth
 ```
 
-2. Create Docker Registry Secret
+### 2. Create Docker Registry Secret
 format
 ```sh
 $ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
