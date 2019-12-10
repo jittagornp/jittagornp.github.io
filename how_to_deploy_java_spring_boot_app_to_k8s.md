@@ -29,12 +29,16 @@ $ kubectl create secret docker-registry my-docker-registry \
 
 2.1 create .env file  
 oauth.env  
-```
+```properties
 JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Dserver.port=8080 -Dspring.redis.url=redis://.....
 ```
 2.2 run command to create config maps from .env file 
-```
+```sh
 $ kubectl create configmap oauth-config --from-env-file=/deploy/oauth.env
+```
+2.3 show configmap as .yaml
+```sh
+$ kubectl get configmap oauth-config -o yaml
 ```
 
 
