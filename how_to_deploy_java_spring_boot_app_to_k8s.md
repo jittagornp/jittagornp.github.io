@@ -1,4 +1,9 @@
 # How to deploy java spring boot application to Kubernetes (K8S)
+
+### Required
+- [Setup K8S Cluster](install_k8s_ubuntu1804.md)
+
+### Information  
 - application name `oauth`
 - docker registry url `registry.mywebsite.com`
 
