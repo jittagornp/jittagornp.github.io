@@ -1,6 +1,8 @@
-# How deploy application to Kubernetes (K8S)
+# How to deploy spring boot application to Kubernetes (K8S)
 - application name `oauth`
-- docker registry url `registry.pamarin.com`
+- docker registry url `registry.mywebsite.com`
+
+### 1. Create deployment file 
 
 deployment.yml
 ```yaml
@@ -22,7 +24,7 @@ spec:
     spec:
       containers:
       - name: oauth
-        image: registry.pamarin.com/oauth:latest 
+        image: registry.mywebsite.com/oauth:latest 
         imagePullPolicy: Always  
         envFrom:
           - configMapRef:
@@ -33,7 +35,7 @@ spec:
         - mountPath: /logs
           name: log-volume
       imagePullSecrets:
-      - name: pamarin-registry    
+      - name: my-docker-registry    
       volumes:
       - name: log-volume
         hostPath:
@@ -57,4 +59,22 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: oauth
+```
+
+2. Create Docker Registry Secret
+format
+```sh
+$ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
+--docker-server=<DOCKER_REGISTRY_URL> \
+--docker-username=<DOCKER_REGISTRY_USERNAME> \
+--docker-password=<DOCKER_REGISTRY_PASSWORD> \
+--docker-email=<DOCKER_REGISTRY_EMAIL>
+```
+run
+```sh
+$ kubectl create secret docker-registry my-docker-registry \
+--docker-server=http://registry.mywebsite.com \
+--docker-username=my_docker_account \
+--docker-password=WGTSU5V22cEYW9f \
+--docker-email=myemail@gmail.com
 ```
