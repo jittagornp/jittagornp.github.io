@@ -9,7 +9,7 @@ Content-Type : application/json
 
 1.1 set upstream name  
 http post  
-> http://<GATEWAY_IP>:8001/upstreams  
+> http://`<GATEWAY_IP>`:8001/upstreams  
 
 body 
 ```json
@@ -20,7 +20,7 @@ body
 
 1.2 set target servers  
 http post
-> http://<GATEWAY_IP>:8001/upstreams/oauth.v1.service/target   
+> http://`<GATEWAY_IP>`:8001/upstreams/oauth.v1.service/target   
 
 body  
 
@@ -41,7 +41,7 @@ server 2
 
 ### 2. Add Service 
 http post
-> http://<GATEWAY_IP>:8001/services
+> http://`<GATEWAY_IP>`:8001/services
 
 body
 ```json
@@ -54,7 +54,7 @@ body
 
 ### 3. Add Route
 http post
-> http://<GATEWAY_IP>:8001/services/oauth-service/routes
+> http://`<GATEWAY_IP>`:8001/services/oauth-service/routes
 
 body
 ```json
