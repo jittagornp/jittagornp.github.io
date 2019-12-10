@@ -2,8 +2,7 @@
 - application name `oauth`
 - docker registry url `registry.mywebsite.com`
 
-
-### 1. Create Docker Registry Secret on Master Node
+### 1. Create Private Docker Registry Secret on Master Node
 format
 ```sh
 $ kubectl create secret docker-registry <DOCKER_REGISTRY_ID> \
@@ -28,15 +27,15 @@ oauth.env
 ```
 JAVA_OPTS=-Djava.security.egd=file:/dev/./urandom -Dserver.port=8080 -Dspring.redis.url=redis://.....
 ```
-2.2 run command to create config maps
+2.2 run command to create config maps from .env file 
 ```
 $ kubectl create configmap oauth-config --from-env-file=/deploy/oauth.env
 ```
 
 
-### 3. Deploy
+### 3. Deploy on Master Node
 
-3.1 create deployment file
+3.1 create deployment file  
 deployment.yml
 ```yaml
 apiVersion: apps/v1
@@ -92,4 +91,10 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: oauth
+```
+
+3.2 run command for deploy
+```sh
+$ kubectl apply -f deployment.yml  
+$ kubectl apply -f service.yml  
 ```
