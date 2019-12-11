@@ -19,7 +19,7 @@
 - ไปที่เมนู Configure
 - ไปที่ส่วน Build Triggers 
 - ติ๊กถูก `Trigger builds remotely (e.g., from scripts)`  
-- Set `Authentication Token` เข้าไป => (`AUTHENTICITY_TOKEN`)
+- Set `Authentication Token` เข้าไป (Random Code มาใส่ครับ) => (`AUTHENTICITY_TOKEN`)
 
 ![](3_jenkins_gitlab_webhook_set_authenticity_token.png)
 
