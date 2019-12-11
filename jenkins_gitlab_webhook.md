@@ -1,5 +1,7 @@
 # Jenkins + GitLab Webhook
 
+> เพื่อให้ Jenkins ทำ Automated Pipeline หลังจากที่มีการ Push Code ไปยัง GitLab 
+
 # ที่ Jenkins 
 ### 1. Generate API Token 
 - ไปที่ข้อมูล User Login 
