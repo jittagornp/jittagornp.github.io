@@ -30,10 +30,10 @@
 - วาง URL ดังต่อไปนี้ลงไป
 
 format  
-> https://`<JENKINS_USER_ID>`:`<JENKINS_USER_TOKEN>`@/job/`<JOB_NAME>`/build?token=`<AUTHENTICITY_TOKEN>`
+> https://`<JENKINS_USER_ID>`:`<JENKINS_USER_TOKEN>`@mydomainname.com/job/`<JOB_NAME>`/build?token=`<AUTHENTICITY_TOKEN>`
 
 ตัวอย่าง  
-> https://hunter:11a403302a4f01b9b4975c0ac27441a5cc@/job/construction/build?token=Aju9ryHUu6t7W8wLSeCWtY2bWjzQduYNPyY7B3gs
+> https://hunter:11a403302a4f01b9b4975c0ac27441a5cc@mydomainname.com/job/construction/build?token=Aju9ryHUu6t7W8wLSeCWtY2bWjzQduYNPyY7B3gs
 
 - ติ๊ก `Push envents` 
 - set `This URL will be triggered by a push to the repository` เป็น master
