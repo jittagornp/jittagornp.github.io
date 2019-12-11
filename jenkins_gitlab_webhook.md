@@ -8,12 +8,18 @@
 - Add new Token => (`JENKINS_USER_TOKEN`)
 - Copy Token นั้นเก็บไว้ 
 
+![](1_jenkins_gitlab_webhook_view_user_id.png)
+
+![](2_jenkins_gitlab_webhook_new_token.png)
+
 ### 2. Add Authenticity Token 
 - ไปยัง Job ที่ต้องการทำ Webhook => (`JOB_NAME`)
 - ไปที่เมนู Configure
 - ไปที่ส่วน Build Triggers 
 - ติ๊กถูก `Trigger builds remotely (e.g., from scripts)`  
 - Set `Authentication Token` เข้าไป => (`AUTHENTICITY_TOKEN`)
+
+![](3_jenkins_gitlab_webhook_set_authenticity_token.png)
 
 # ที่ GitLab 
 ### 3. ผูก WebHook 
@@ -30,5 +36,7 @@ format
 - ติ๊ก `Push envents` 
 - set `This URL will be triggered by a push to the repository` เป็น master
 - คลิกที่ปุ่ม `Add webhook`
+
+![](4_jenkins_gitlab_webhook_set_webhook.png)
 
 ลอง test ดู  
