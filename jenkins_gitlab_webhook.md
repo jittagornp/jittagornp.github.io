@@ -36,7 +36,7 @@ format
 > https://hunter:11a403302a4f01b9b4975c0ac27441a5cc@mydomainname.com/job/construction/build?token=Aju9ryHUu6t7W8wLSeCWtY2bWjzQduYNPyY7B3gs
 
 - ติ๊ก `Push envents` 
-- set `This URL will be triggered by a push to the repository` เป็น master
+- set `This URL will be triggered by a push to the repository` เป็น branch ที่ต้องการ 
 - คลิกที่ปุ่ม `Add webhook`
 
 ![](4_jenkins_gitlab_webhook_set_webhook.png)
