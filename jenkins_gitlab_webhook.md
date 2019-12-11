@@ -41,4 +41,4 @@ format
 
 ![](4_jenkins_gitlab_webhook_set_webhook.png)
 
-ลอง test ดู  
+ลอง Push Code ไปยัง branch ที่กำหนดดู จะพบว่ามีการทำ Automated Pipeline ที่ฝั่ง Jenkins เกิดขึ้น   
