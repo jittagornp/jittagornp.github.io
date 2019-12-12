@@ -2,7 +2,7 @@
 
 ![](kong-loadbalancing.png)
 
-headers all requests  
+headers for all requests  
 ```
 Content-Type : application/json  
 ```
@@ -61,7 +61,8 @@ http post
 body
 ```json
 {
-  "hosts" : ["auth.mydomainname.com"]
+  "hosts" : ["auth.mydomainname.com"],
+  "paths" : ["/"]
 }
 ```
 
