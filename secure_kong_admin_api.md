@@ -1,5 +1,7 @@
 # Secure Kong Admin API
 
+![](kong.png)
+
 ### 1. Add Service
 POST : `<GATEWAY_IP>`:8001/services
 ```
