@@ -20,7 +20,7 @@ body
 }
 ```
 
-1.2 set target servers  
+1.2 set target servers under upstream 
 http post
 > http://`<GATEWAY_IP>`:8001/upstreams/`oauth.v1.service`/target   
 
@@ -54,7 +54,7 @@ body
 }
 ```
 
-### 3. Add Route
+### 3. Add Route under service 
 http post
 > http://`<GATEWAY_IP>`:8001/services/`oauth-service`/routes
 
@@ -62,8 +62,12 @@ body
 ```json
 {
   "hosts" : ["auth.mydomainname.com"],
-  "paths" : ["/"]
+  "paths" : ["/oauth/v1"]
 }
 ```
+
+### 4. Test Access
+
+> https://auth.mydomainname.com/oauth/v1
 
 Reference : [https://docs.konghq.com/1.4.x/loadbalancing/](https://docs.konghq.com/1.4.x/loadbalancing/)
