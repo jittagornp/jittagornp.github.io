@@ -1,18 +1,51 @@
 # Secure Kong Admin API
 
-### 1. add `key-auth` plugin
-
-Http post : `http://<KONG_HOST>:<ADMIN_PORT>/plugins`  
-Headers 
+### 1. Add Service
+POST : `<GATEWAY_IP>`:8001/services
 ```
-ContentType : application/json
-```
-Body   
-```json
 {
-	"name" : "key-auth",
-	"config" : {
-		"key_names" : ["apikey"]
-	}
+  "name" : "admin-api",
+  "host" : "localhost",
+  "port" : 8001,
+  "path" : "/"
 }
 ```
+
+### 2. Add Route under Service
+POST : `<GATEWAY_IP>`:8001/services/`admin-api`/routes
+```
+{
+  "paths" : ["/admin-api"]
+}
+```
+
+### 3. Add Plugin Key Authentication
+POST : `<GATEWAY_IP>`::8001/services/`admin-api`/plugins
+```
+{
+  "name" : "key-auth"
+}
+```
+
+### 4. Create Consumer
+POST : `<GATEWAY_IP>`:8001/consumers
+```
+{
+  "username" : "admin"
+}
+```
+
+### 5. Create Consumer Key
+POST : `<GATEWAY_IP>`:8001/consumers/`admin`/key-auth
+```
+{
+  "key" : "68fSNmzqfc3Wxe5GZPb4T8VwGpKUvu3caTeHqM7Z"
+}
+```
+
+### 6. Test 
+GET : `<GATEWAY_IP>`/admin-api?apikey=`68fSNmzqfc3Wxe5GZPb4T8VwGpKUvu3caTeHqM7Z`
+
+### 7. Add Firewall Inbound Rules 
+
+> for disable port 8001  
