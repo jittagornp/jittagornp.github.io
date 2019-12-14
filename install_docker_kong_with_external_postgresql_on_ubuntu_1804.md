@@ -12,6 +12,7 @@ $ docker run --rm  \
 --network=kong-net \
 -e "KONG_DATABASE=postgres" \
 -e "KONG_PG_HOST=<DATABASE_HOST>" \
+-e "KONG_PG_DATABASE=<DATABASE_NAME>" \
 -e "KONG_PG_USER=<DATABASE_USERNAME>" \
 -e "KONG_PG_PASSWORD=<DATABASE_PASSWORD>" \
 -e "KONG_PG_PORT=<DATABASE_PORT>" \
@@ -25,6 +26,7 @@ $ docker run -d --name kong \
      --network=kong-net \
      -e "KONG_DATABASE=postgres" \
      -e "KONG_PG_HOST=<DATABASE_HOST>" \
+     -e "KONG_PG_DATABASE=<DATABASE_NAME>" \
      -e "KONG_PG_USER=<DATABASE_USERNAME>" \
      -e "KONG_PG_PASSWORD=<DATABASE_PASSWORD>" \
      -e "KONG_PG_PORT=<DATABASE_PORT>" \
